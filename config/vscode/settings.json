@@ -1,0 +1,37 @@
+{
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "git.openRepositoryInParentFolders": "never",
+
+  "emmet.showSuggestionsAsSnippets": true,
+  "files.associations": {
+    "*html": "html",
+    "*njk": "html"
+  },
+  "emmet.includeLanguages": {
+    "typescript": "typescriptreact"
+  },
+  "emmet.preferences": {},
+
+  "amVim.smartRelativeLineNumbers": true,
+
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.formatOnSave": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": ["css", "scss", "postcss"],
+  "prettier.singleQuote": false,
+  "window.titleBarStyle": "custom",
+  "amVim.vimStyleNavigationInListView": false,
+  "editor.tabSize": 2,
+  "editor.stickyScroll.enabled": true,
+  "workbench.colorTheme": "Tokyo Night",
+  "timeline.pageOnScroll": true,
+  "editor.fontFamily": "IntelOne Mono",
+  "liveServer.settings.donotShowInfoMsg": true
+}

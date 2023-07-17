@@ -1,0 +1,96 @@
+{
+    "mapping": {
+        "1,58,1+1,36,1": [
+            "KEY_DOWN",
+            "keyboard"
+        ],
+        "1,58,1+1,37,1": [
+            "KEY_UP",
+            "keyboard"
+        ],
+        "1,58,1+1,35,1": [
+            "KEY_LEFT",
+            "keyboard"
+        ],
+        "1,58,1+1,38,1": [
+            "KEY_RIGHT",
+            "keyboard"
+        ],
+        "1,58,1+1,53,1": [
+            "KEY_LEFTSHIFT + KEY_5",
+            "keyboard"
+        ],
+        "1,58,1+1,45,1": [
+            "BackSpace",
+            "keyboard"
+        ],
+        "1,58,1+1,22,1": [
+            "KEY_UNDO",
+            "keyboard"
+        ],
+        "1,58,1+1,39,1": [
+            "Super_R",
+            "keyboard"
+        ],
+        "1,58,1+1,40,1": [
+            "KEY_LEFTALT + KEY_TAB + KEY_UP",
+            "keyboard"
+        ],
+        "1,58,1+1,21,1": [
+            "KEY_COPY",
+            "keyboard"
+        ],
+        "1,58,1+1,32,1": [
+            "KEY_HOME\n+\nKEY_LEFTSHIFT\n+\nKEY_END\n+\nKEY_DELETE",
+            "keyboard"
+        ],
+        "1,58,1+1,47,1": [
+            "KEY_LEFTSHIFT",
+            "keyboard"
+        ],
+        "1,58,1+1,17,1": [
+            "KEY_LEFTCTRL + KEY_RIGHT",
+            "keyboard"
+        ],
+        "1,58,1+1,48,1": [
+            "KEY_LEFTCTRL + KEY_LEFT",
+            "keyboard"
+        ],
+        "1,58,1+1,5,1": [
+            "KEY_HOME",
+            "keyboard"
+        ],
+        "1,58,1+1,19,1": [
+            "KEY_REDO",
+            "keyboard"
+        ],
+        "1,58,1+1,46,1": [
+            "KEY_HOME\n+\nKEY_LEFTSHIFT\n+\nKEY_END\n+\nKEY_PASTE",
+            "keyboard"
+        ],
+        "1,58,1+1,25,1": [
+            "KEY_PASTE",
+            "keyboard"
+        ],
+        "1,58,1+1,11,1": [
+            "KEY_END",
+            "keyboard"
+        ],
+        "1,58,1+1,52,1": [
+            "KEY_LEFTSHIFT \n+\nKEY_END\n+\nKEY_DELETE",
+            "keyboard"
+        ],
+        "1,58,1+1,51,1": [
+            "KEY_LEFTSHIFT \n+\nKEY_HOME\n+\nKEY_DELETE",
+            "keyboard"
+        ],
+        "1,58,1+1,27,1": [
+            "KEY_LEFTSHIFT \n+\nKEY_END\n+\nKEY_PASTE",
+            "keyboard"
+        ],
+        "1,58,1+1,26,1": [
+            "KEY_LEFTSHIFT \n+\nKEY_HOME\n+\nKEY_PASTE",
+            "keyboard"
+        ]
+    }
+}
