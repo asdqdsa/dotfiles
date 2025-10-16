@@ -1,0 +1,275 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  // {
+  // 	"key": "ctrl+j ctrl+k",
+  // 	"command": "workbench.action.togglePanel"
+  // },
+
+  // terminal //
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+q",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  // ** //
+  {
+    "key": "ctrl+`",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "-amVim.ctrl+c",
+    "when": "amVim.configuration.shouldBindCtrlCommands && editorTextFocus"
+  },
+  {
+    "key": "ctrl+k .",
+    "command": "breadcrumbs.focusAndSelect",
+    "when": "breadcrumbsPossible && breadcrumbsVisible"
+  },
+  {
+    "key": "ctrl+k ctrl+m",
+    "command": "editor.action.toggleMinimap"
+  },
+
+  // suggestions //
+  {
+    "key": "ctrl+n",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "-selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  // {
+  //   "key": "down",
+  //   "command": "-selectNextSuggestion",
+  //   "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  // },
+  {
+    "key": "ctrl+up",
+    "command": "-selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  // quick picker
+  {
+    "key": "ctrl+n",
+    "command": "quickInput.next",
+    "when": "inQuickInput && quickInputType == 'quickPick'"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "quickInput.previous",
+    "when": "inQuickInput && quickInputType == 'quickPick'"
+  },
+  // ** //
+
+  // Editor, Groups
+  {
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "ctrl+shift+7",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "workbench.action.toggleEditorWidths",
+    "when": "editorTextFocus || !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+0",
+    "command": "workbench.action.nextEditorInGroup",
+    "when": "editorTextFocus || !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+9",
+    "command": "workbench.action.previousEditorInGroup",
+    "when": "editorTextFocus || !inputFocus"
+  },
+  {
+    "key": "shift+h",
+    "command": "workbench.action.navigateBack",
+    "when": "canNavigateBack && amVim.mode != 'INSERT' && amVim.mode != 'VISUAL' && !amVim.waitingForInput"
+  },
+  {
+    "key": "shift+l",
+    "command": "workbench.action.navigateForward",
+    "when": "canNavigateForward && amVim.mode != 'INSERT' && amVim.mode != 'VISUAL' && !amVim.waitingForInput"
+  },
+  // explorer //
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "f",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "list.focusUp",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "shift+space",
+    "command": "list.collapse",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "list.focusDown",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  // {
+  //   "key": "ctrl+0",
+  //   "command": "workbench.action.lastEditorInGroup"
+  // },
+  // {
+  //   "key": "ctrl+9",
+  //   "command": "-workbench.action.lastEditorInGroup"
+  // },
+  {
+    "key": "ctrl+7",
+    "command": "workbench.action.focusSideBar"
+  },
+  // {
+  //   "key": "ctrl+0",
+  //   "command": "-workbench.action.focusSideBar"
+  // },
+  // editor + sidebar
+  {
+    "key": "ctrl+8",
+    "command": "workbench.action.lastEditorInGroup"
+  },
+  {
+    "key": "ctrl+9",
+    "command": "workbench.action.focusSideBar"
+  },
+  // Quick pallete
+  // command pallete + avim
+  {
+    "key": "shift+'",
+    "command": "workbench.action.showCommands",
+    "when": "editorTextFocus && amVim.mode != 'INSERT' && amVim.mode != 'VISUAL' && !amVim.waitingForInput"
+  },
+  // Quick pallete
+  // Go to File
+  // {
+  //   "key": "ctrl+p",
+  //   "command": "workbench.action.quickOpen"
+  // }
+
+  // CODE ACTIONS
+  // go to
+  {
+    "key": "space g i",
+    "command": "editor.action.goToImplementation",
+    "when": "editorHasImplementationProvider && editorTextFocus && amVim.mode != 'INSERT' && amVim.mode != 'VISUAL' && !amVim.waitingForInput"
+  },
+  {
+    "key": "space g d",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && amVim.mode != 'INSERT' && amVim.mode != 'VISUAL' && !amVim.waitingForInput"
+  },
+  {
+    "key": "space g t",
+    "command": "editor.action.goToTypeDefinition",
+    "when": "editorHasTypeDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor &&  amVim.mode != 'INSERT' && amVim.mode != 'VISUAL' && !amVim.waitingForInput"
+  },
+  {
+    "key": "space g r",
+    "command": "editor.action.goToReferences",
+    "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor &&  amVim.mode != 'INSERT' && amVim.mode != 'VISUAL' && !amVim.waitingForInput"
+  },
+  // peek
+  {
+    "key": "space p i",
+    "command": "editor.action.peekImplementation",
+    "when": "editorHasImplementationProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor&& amVim.mode != 'INSERT' && amVim.mode != 'VISUAL' && !amVim.waitingForInput"
+  },
+  {
+    "key": "space p d",
+    "command": "editor.action.peekDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor &&  amVim.mode != 'INSERT' && amVim.mode != 'VISUAL' && !amVim.waitingForInput"
+  },
+  {
+    "key": "space p t",
+    "command": "editor.action.peekTypeDefinition",
+    "when": "editorHasTypeDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor &&  amVim.mode != 'INSERT' && amVim.mode != 'VISUAL' && !amVim.waitingForInput"
+  },
+
+  // {
+  //   "key": "ctrl+k",
+  //   "command": "scrollDown",
+  //   "when": "inReferenceSearchEditor"
+  // },
+  // {
+  //   "key": "ctrl+n",
+  //   "command": "scrollUp",
+  //   "when": "inReferenceSearchEditor"
+  // },
+  {
+    "key": "space p shift+F",
+    "command": "togglePeekWidgetFocus",
+    "when": "inReferenceSearchEditor || referenceSearchVisible"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "list.focusDown",
+    "when": "inReferenceSearchEditor || referenceSearchVisible"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "list.focusUp",
+    "when": "inReferenceSearchEditor || referenceSearchVisible"
+  }
+
+  // {
+  //   "key": "f12",
+  //   "command": "goToNextReference",
+  //   "when": "inReferenceSearchEditor || referenceSearchVisible"
+  // }
+]
