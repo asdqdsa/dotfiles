@@ -1,0 +1,8 @@
+#!/bin/bash
+# list windows and focus selected
+selected=$(hyprctl clients -j | jq -r '.[] | "\(.workspace.name)\t\(.title)\t\(.address)"' \
+  | wofi --dmenu -p "windows" | awk -F'\t' '{print $3}')
+
+if [ -n "$selected" ]; then
+  hyprctl dispatch focuswindow address:$selected
+fi
